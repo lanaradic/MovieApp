@@ -10,7 +10,7 @@ const MainLayout = ({ children }) => {
         <aside className="side-bar">
           <SideBar></SideBar>
         </aside>
-        <main clasName="main-content">{children}</main>
+       <main className="main-content">{children}</main>
       </div>
     </>
   );

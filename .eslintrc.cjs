@@ -21,6 +21,6 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
-    'react/props-types': false,
+    'react/prop-types': 0,
   },
 };
