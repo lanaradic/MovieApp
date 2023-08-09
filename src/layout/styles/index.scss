@@ -7,9 +7,19 @@
   display: flex;
 }
 .side-bar {
+  box-shadow: 2px 0px 90px 0px rgba(97, 0, 194, 0.4);
   height: 100vh;
   width: 275px;
   background-color: $main-dark;
+  overflow: visible;
+  z-index: 2;
 }
 .main-content {
+  background: conic-gradient(
+    from -2deg at 105.99% 107.28%,
+    #37312a 175.51443457603455deg,
+    #191817 342.4887156486511deg,
+    #191817 360deg
+  );
+  width: 100%;
 }
