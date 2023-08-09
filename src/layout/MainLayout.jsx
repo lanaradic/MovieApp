@@ -1,5 +1,5 @@
 import React from 'react';
-import SideBar from '../components/SideBar';
+import SideBar from '../components/SideBar.jsx';
 import './styles/index.scss';
 import '../styles/colors.scss';
 
@@ -10,7 +10,7 @@ const MainLayout = ({ children }) => {
         <aside className="side-bar">
           <SideBar></SideBar>
         </aside>
-       <main className="main-content">{children}</main>
+        <main className="main-content">{children}</main>
       </div>
     </>
   );
