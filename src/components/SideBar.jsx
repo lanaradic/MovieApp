@@ -1,5 +1,5 @@
 import React from 'react';
-import './sideBar.scss';
+import './styles/sideBar.scss';
 import coffee from '../assets/coffee.svg';
 
 import film from '../assets/film.svg';
