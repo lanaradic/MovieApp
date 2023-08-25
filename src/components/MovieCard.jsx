@@ -2,7 +2,7 @@ import React from 'react';
 import '../components/styles/movieCard.scss';
 import heart from '../assets/heart.svg';
 
-const MovieCard = ({ isFavorite }) => {
+const MovieCard = ({ isFavorite, title, year, genre }) => {
   return (
     <div
       style={{ backgroundImage: "url('src/assets/Rectangle201.svg')" }}
@@ -16,8 +16,10 @@ const MovieCard = ({ isFavorite }) => {
         </button>
         <div className="movie-card-content">
           <div className="inner-wrapper">
-            <h2>Tokyo Train</h2>
-            <p>2022 | Action comedy</p>
+            <h2>{title}</h2>
+            <p>
+              {year} | {genre}
+            </p>
           </div>
         </div>
       </div>

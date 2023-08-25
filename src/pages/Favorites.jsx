@@ -1,6 +1,7 @@
 import React from 'react';
 import MovieCard from '../components/MovieCard';
 import '../components/styles/favourites.scss';
+import { favoriteData } from '../mocks/movies';
 
 const Favorites = () => {
   return (
@@ -12,8 +13,20 @@ const Favorites = () => {
       </div>
       <h2 className="favourites-title">Favourites</h2>
       <div className="favourite-card-wrapper">
-        <MovieCard isFavorite={true} />
-        <MovieCard isFavorite={true} />
+        {favoriteData.length &&
+          favoriteData.map((item, index) => {
+            return (
+              <MovieCard
+                key={index}
+                isFavorite={true}
+                title={item.title}
+                year={item.year}
+                genre={item.genre}
+              />
+            );
+          })}
+        {/* <MovieCard isFavorite={true} title={} />
+        <MovieCard isFavorite={true} /> */}
       </div>
     </div>
   );
