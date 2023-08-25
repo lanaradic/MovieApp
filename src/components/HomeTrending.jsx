@@ -1,16 +1,16 @@
 import React from 'react';
+import '../components/styles/homeTrending.scss';
 import MovieCard from './MovieCard';
-import './styles/homeTrending.scss';
 
-const HomeTrending = () => {
+const HomeTrending = ({ title, favorite }) => {
   return (
     <>
-      <h2 className="trending-title">Trending</h2>
-      <div className="home-trending-wrapper">
-        <MovieCard />
-        <MovieCard />
-        <MovieCard />
-        <MovieCard />
+      <h2 className="trending-title">{title}</h2>
+      <div className="home-trennding-wrapper">
+        <MovieCard isFavorite={favorite} />
+        <MovieCard isFavorite={favorite} />
+        <MovieCard isFavorite={favorite} />
+        {!favorite && <MovieCard isFavorite={favorite} />}
       </div>
     </>
   );

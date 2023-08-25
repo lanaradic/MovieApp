@@ -4,7 +4,8 @@ import HomeTrending from './HomeTrending';
 const HomeContent = () => {
   return (
     <div>
-      <HomeTrending />
+      <HomeTrending title="Trending" />
+      <HomeTrending title="Favorites" favorite={true} />
     </div>
   );
 };

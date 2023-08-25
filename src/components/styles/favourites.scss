@@ -1,0 +1,42 @@
+.main-favourites-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.navigation-wrapper {
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  gap: 32px;
+  margin-top: 45px;
+  margin-left: 36px;
+  cursor: pointer;
+  :hover {
+    font-weight: 700;
+  }
+}
+
+.favourites-title {
+  margin-top: 130px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 36px;
+}
+
+.favourite-card-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 32px;
+  margin-top: 24px;
+  margin-left: 36px;
+}
